@@ -1,0 +1,14 @@
+{
+  "validUser": {
+    "username": "Test Cypress Eric",
+    "password": "1234"
+  },
+  "invalidUser": {
+    "username": "usuario_invalido",
+    "password": "contraseña_incorrecta"
+  },
+  "newUser": {
+    "baseUsername": "TestUser",
+    "password": "test1234"
+  }
+} 
