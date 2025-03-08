@@ -6,4 +6,5 @@
 import './login.steps';
 import './registro.steps';
 import './contactAndAboutUs.steps';
-import './categoriesFilters.steps'; 
+import './categoriesFilters.steps';
+import './carrito.steps'; 
