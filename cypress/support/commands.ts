@@ -215,3 +215,35 @@ Cypress.Commands.add('checkConsoleMessages', () => {
     };
   });
 });
+
+// Comando personalizado para verificar productos en una categoría
+Cypress.Commands.add('verifyProductInCategory', (productName: string) => {
+  // Verificar que el producto especificado está visible
+  cy.contains('.card-title', productName).should('be.visible');
+  
+  // Verificar que el producto tiene un precio
+  cy.contains('.card-title', productName)
+    .parents('.card')
+    .find('.card-block')
+    .find('h5')
+    .should('contain', '$');
+  
+  // Verificar que el producto tiene botones de acción
+  cy.contains('.card-title', productName)
+    .parents('.card')
+    .find('.card-block')
+    .find('a')
+    .should('have.length.at.least', 1);
+});
+
+// Comando personalizado para navegar a una categoría
+Cypress.Commands.add('navigateToCategory', (categoryName: string) => {
+  // Hacer clic en la categoría especificada
+  cy.contains('.list-group-item', categoryName).click();
+  
+  // Esperar un momento para que se carguen los productos
+  cy.wait(1000);
+  
+  // Verificar que la categoría está seleccionada en el menú
+  cy.contains('.list-group-item', categoryName).should('be.visible');
+});

@@ -5,4 +5,5 @@
 // Importar todas las definiciones de pasos
 import './login.steps';
 import './registro.steps';
-import './contactAndAboutUs.steps'; 
+import './contactAndAboutUs.steps';
+import './categoriesFilters.steps'; 

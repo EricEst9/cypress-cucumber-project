@@ -78,5 +78,17 @@ declare namespace Cypress {
      * @example cy.visitHomePage()
      */
     visitHomePage(): Chainable<any>
+
+    /**
+     * Comando personalizado para verificar un producto en una categoría
+     * @example cy.verifyProductInCategory('Samsung galaxy s6')
+     */
+    verifyProductInCategory(productName: string): Chainable<any>
+
+    /**
+     * Comando personalizado para navegar a una categoría
+     * @example cy.navigateToCategory('Phones')
+     */
+    navigateToCategory(categoryName: string): Chainable<any>
   }
 } 
