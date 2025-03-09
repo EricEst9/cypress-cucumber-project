@@ -4,7 +4,7 @@
 
 // Importar todas las definiciones de pasos
 import './login.steps';
-import './registro.steps';
+import './signup.steps';
 import './contactAndAboutUs.steps';
 import './categoriesFilters.steps';
-import './carrito.steps'; 
+import './checkout.steps'; 
