@@ -1,13 +1,12 @@
-Feature: Registro de usuarios
+Feature: User Registration
 
-  Scenario: Registrar un nuevo usuario y iniciar sesión
-    Given el usuario está en la página principal
-    When registra un nuevo usuario
-    And cierra la alerta de registro exitoso
-    And inicia sesión con las credenciales del nuevo usuario
-    Then debe acceder a la pantalla principal con el nuevo usuario
+  Scenario: Register a new user and log in
+    Given the user loads the homepage
+    When they register a new user
+    And they close the successful registration alert
+    And they log in with the new user credentials
+    Then they should access the main screen with the new user
     
-  Scenario: Intentar registrar un usuario ya existente
-    Given el usuario está en la página principal
-    When intenta registrar un usuario ya existente
-    Then debe ver un mensaje indicando que el usuario ya existe 
+  Scenario: Attempt to register an existing user
+    Given the user loads the homepage
+    When they attempt to register an existing user

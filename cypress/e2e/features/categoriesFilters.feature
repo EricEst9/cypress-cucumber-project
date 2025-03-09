@@ -1,27 +1,27 @@
-Feature: Navegación por categorías y productos
+Feature: Categories and Product Navigation
 
-  Scenario: Usuario navega por la categoría de teléfonos
-    Given el usuario está en la página principal
-    When hace clic en la categoría "Phones"
-    Then debe ver solo productos de la categoría "Phones"
-    And no debe ver productos de otras categorías
+  Scenario: User navigates through the Phones category
+    Given the user loads the homepage
+    When they click on the "Phones" category
+    Then they should see only products from the "Phones" category
+    And they should not see products from other categories
 
-  Scenario: Usuario navega por la categoría de portátiles
-    Given el usuario está en la página principal
-    When hace clic en la categoría "Laptops"
-    Then debe ver solo productos de la categoría "Laptops"
-    And no debe ver productos de otras categorías
+  Scenario: User navigates through the Laptops category
+    Given the user loads the homepage
+    When they click on the "Laptops" category
+    Then they should see only products from the "Laptops" category
+    And they should not see products from other categories
 
-  Scenario: Usuario navega por la categoría de monitores
-    Given el usuario está en la página principal
-    When hace clic en la categoría "Monitors"
-    Then debe ver solo productos de la categoría "Monitors"
-    And no debe ver productos de otras categorías
+  Scenario: User navigates through the Monitors category
+    Given the user loads the homepage
+    When they click on the "Monitors" category
+    Then they should see only products from the "Monitors" category
+    And they should not see products from other categories
     
-  Scenario: El carrusel de fotos funciona correctamente
-    Given el usuario está en la página principal
-    Then debe ver el carrusel de fotos
-    When hace clic en el botón "Next" del carrusel
-    Then debe ver la siguiente imagen del carrusel
-    When hace clic en el botón "Previous" del carrusel
-    Then debe ver la imagen anterior del carrusel 
+  Scenario: Photo carousel works correctly
+    Given the user loads the homepage
+    Then they should see the photo carousel
+    When they click on the "Next" button of the carousel
+    Then they should see the next image in the carousel
+    When they click on the "Previous" button of the carousel
+    Then they should see the previous image in the carousel 

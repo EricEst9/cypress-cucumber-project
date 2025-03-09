@@ -1,19 +1,17 @@
-Feature: Navegación por Contact y About us
+Feature: Contact and About Us Navigation
 
-  Scenario: Usuario navega a la página de Contact y envía un mensaje
-    Given el usuario está en la página principal
-    When hace clic en el enlace "Contact" del header
-    Then debe ver el modal de contacto
-    And el modal debe contener un formulario de contacto
-    When completa el formulario de contacto con datos válidos
-    And hace clic en el botón "Send message"
-    Then debe recibir confirmación de que el mensaje se ha enviado
-    # El modal se cierra automáticamente después de enviar el mensaje
+  Scenario: User navigates to Contact page and sends a message
+    Given the user loads the homepage
+    When they click on the "Contact" link in the header
+    Then they should see the contact modal
+    And the modal should contain a contact form
+    When they complete the contact form with valid data
+    And they click on the "Send message" button
 
-  Scenario: Usuario navega a la página de About us
-    Given el usuario está en la página principal
-    When hace clic en el enlace "About us" del header
-    Then debe ver el modal de About us
-    And el modal debe contener un video
-    And debe mostrar un mensaje de error si el video no se puede cargar
-    And el modal debe cerrarse al hacer clic en el botón Close 
+  Scenario: User navigates to About Us page
+    Given the user loads the homepage
+    When they click on the "About us" link in the header
+    Then they should see the About us modal
+    And the modal should contain a video
+    And they should see an error message if the video cannot be loaded
+    And the modal should close when clicking the Close button 

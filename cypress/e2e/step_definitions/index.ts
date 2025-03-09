@@ -1,8 +1,9 @@
-// Este archivo se utiliza para cargar todas las definiciones de pasos
-// No es necesario agregar código aquí, pero su presencia puede ayudar
-// al preprocesador a encontrar el directorio de definiciones de pasos
+// This file is used to load all step definitions
+// No code is needed here, but its presence helps
+// the preprocessor find the step definitions directory
 
-// Importar todas las definiciones de pasos
+// Import all step definitions
+import './common.steps'; // This must be imported first to avoid conflicts
 import './login.steps';
 import './signup.steps';
 import './contactAndAboutUs.steps';
