@@ -8,4 +8,5 @@ import './login.steps';
 import './signup.steps';
 import './contactAndAboutUs.steps';
 import './categoriesFilters.steps';
-import './checkout.steps'; 
+import './checkout.steps';
+import './pageStatus.steps'; // New step definitions for page status verification 
